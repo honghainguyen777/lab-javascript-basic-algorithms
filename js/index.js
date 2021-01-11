@@ -43,3 +43,18 @@ console.log(words);
 
 let wordEt = text.split("et").length;
 console.log(wordEt);
+
+// Bonus 2
+
+let phraseToCheck = 'Never odd or even';
+
+let modifiedPhrase = phraseToCheck.replace(/[^0-9a-z]/gi, '').toLowerCase();
+
+let isPalindrome = true;
+
+for (let i = 0; i < modifiedPhrase.length / 2; i++) {
+    if (modifiedPhrase[i] !== modifiedPhrase[modifiedPhrase.length - 1 - i]) {
+        isPalindrome = false;
+        break;
+    }
+} console.log(`The phrase is a palindrome: ${isPalindrome}`);
