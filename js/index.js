@@ -18,7 +18,7 @@ let changedNameHacker1 = '';
 
 for (let i = 0; i < hacker1.length; i++) {
     changedNameHacker1 += hacker1[i].toUpperCase() + ' ';
-} console.log(changedNameHacker1.slice(0, changedNameHacker1.length - 1));
+} console.log(changedNameHacker1.slice(0, changedNameHacker1.length - 1)); // or changedNameHacker1.trim();
 
 let changedNameHacker2 = '';
 for (let i = hacker2.length - 1; i >= 0; i--) {
